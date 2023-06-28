@@ -1,0 +1,8 @@
+<div id="progress-bar">
+    {% if value and max %} 
+    <progress value="{{value}}" max="{{max}}">{{value}} %</progress> <span>Files: {{value}} / {{max}}</span>
+    {% else %}
+    <span>Waiting for you to upload a file.</span>
+    {% endif %}
+    
+</div>
