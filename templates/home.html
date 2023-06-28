@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Turbo-Flask Streams Demo</title>
+    <style>
+      .load {
+        float: right;
+        width: 300px;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+      .load th, .load td {
+        padding: 6px;
+        text-align: center;
+      }
+    </style>
+    {{ turbo() }}
+  </head>
+  <body>
+    <h1>Welcome - {{userid}}</h1>
+    <h2>Upload Progress</h2>
+    {% include 'progress-bar.html'%}
+    <button id="start-button">Start Upload</button>
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            fetch('/upload_file');
+        });
+    </script>
+  </body>
+</html>
