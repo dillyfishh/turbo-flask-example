@@ -18,7 +18,7 @@ This is a simple Flask application that demonstrates asynchronous file upload pr
 
 1. Clone this repository:
 ```
-https://github.com/dillyfishh/PythonFileRenamer.git
+[https://github.com/dillyfishh/PythonFileRenamer.git](https://github.com/dillyfishh/turbo-flask-example.git)
 ```
 2. Install the necessary packages:
 ```
